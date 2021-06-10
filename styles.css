@@ -44,3 +44,38 @@ span.badge{
     background-color: rgba(0, 0, 0, 60%);
     color: white;
 }
+
+@media only screen and (max-width: 1200px){
+    .jumbotron h1{
+        font-size: 3rem;
+    }
+    .jumbotron p{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .jumbotron h1{
+        font-size: 2.5rem;
+        top: -20px;
+    }
+    .jumbotron p{
+        font-size: 1rem;
+        top: -20px;
+    }
+}
+
+@media only screen and (max-width: 359px){
+    .jumbotron p.last-p{
+        display: none;
+    }
+    .jumbotron h1{
+        font-size: 3rem;
+        top: -20px;
+    }
+    .jumbotron p{
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        top: -20px;
+    }
+}
