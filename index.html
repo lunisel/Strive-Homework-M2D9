@@ -364,60 +364,112 @@
                         <th scope="col">#</th>
                         <th scope="col">Title</th>
                         <th scope="col">Track Duration</th>
-                        <th scope="col">Delete</th>
+                        <th scope="col" class="button-delete"></th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr id="row1">
-                        <th scope="row">1</th>
+                    <tbody id="table">
+                      <tr>
+                        <td>1</td>
                         <td>The Bird</td>
                         <td>3:37</td>
-                        <td><button onclick="deleteB1()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button1"><i class="bi bi-dash-circle"></i></button></td>
+                        <td class="button-delete"><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr id="row2">
-                        <th scope="row">2</th>
+                      <tr>
+                        <td>2</td>
                         <td>Heart Don't Stand a Chance</td>
                         <td>5:12</td>
-                        <td><button onclick="deleteB2()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button2"><i class="bi bi-dash-circle"></i></button></td>
+                        <td class="button-delete"><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr id="row3">
-                        <th scope="row">3</th>
+                      <tr>
+                        <td>3</td>
                         <td>The Waters</td>
                         <td>2:54</td>
-                        <td><button onclick="deleteB3()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button3"><i class="bi bi-dash-circle"></i></button></td>
+                        <td class="button-delete"><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr id="row4">
-                        <th scope="row">4</th>
+                      <tr>
+                        <td>4</td>
                         <td>The Season/Carry Me</td>
                         <td>5:28</td>
-                        <td><button onclick="deleteB4()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button4"><i class="bi bi-dash-circle"></i></button></td>
+                        <td class="button-delete"><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr id="row5">
-                        <th scope="row">5</th>
+                      <tr>
+                        <td>5</td>
                         <td>Put Me Thru</td>
                         <td>2:40</td>
-                        <td><button onclick="deleteB5()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button5"><i class="bi bi-dash-circle"></i></button></td>
+                        <td class="button-delete"><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr id="row6">
-                        <th scope="row">6</th>
+                      <tr>
+                        <td>6</td>
                         <td>Am I Wrong</td>
                         <td>4:13</td>
-                        <td><button onclick="deleteB6()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button6"><i class="bi bi-dash-circle"></i></button></td>
+                        <td class="button-delete"><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr id="row7">
-                        <th scope="row">7</th>
+                      <tr>
+                        <td>7</td>
                         <td>Whitout you</td>
                         <td>3:19</td>
-                        <td><button onclick="deleteB7()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button7"><i class="bi bi-dash-circle"></i></button></td>
+                        <td class="button-delete"><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr id="row8">
-                        <th scope="row">8</th>
+                      <tr>
+                        <td>8</td>
                         <td>Parking Lot</td>
                         <td>5:28</td>
-                        <td><button onclick="deleteB8()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button8"><i class="bi bi-dash-circle"></i></button></td>
+                        <td class="button-delete"><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
                     </tbody>
                   </table>
+
+                  <p>
+                    <a 
+                    class="btn btn-secondary w-100" 
+                    data-toggle="collapse" 
+                    href="#collapseExample" 
+                    role="button" 
+                    aria-expanded="false" 
+                    aria-controls="collapseExample"
+                    style="font-size: 1.5rem; height: 50px;">
+                       <span>Add a track to the table <i class="bi bi-plus"></i></span>
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <form class="row">
+
+                        <div class="col-6">
+                            <label for="track-number" class="pr-3">Choose track number:</label>
+                            <input type="number"id="track-number" class="mb-3"/>
+
+                            <label for="track-name" class="pr-3 mt-2 mb-4">Write the title of the song</label>
+                            <input type="text"id="track-name" class="mb-3">
+                        </div>
+
+                        <div class="col-6">
+                            <label for="track-lenght" class="pr-3 pb-2">Insert song duration</label>
+                            <input type="text" id="track-lenght"class="mb-3">
+
+                            <label for="track-lenght" class="pr-3 pb-2">Featurings :</label>
+                            <input type="text" id="track-feat"class="mb-3">
+
+                            <div class="d-flex align-items-center">
+                               <input type="checkbox" id="checkbox">
+                               <label for="checkbox" class="mb-0 pl-3">Live performance</label> 
+                            </div>
+                            
+                        </div>
+                            
+                        <div class="col-12 d-flex justify-content-center">
+                            <button onclick="addRow()" class="btn btn-success mt-2">Add Track</button>
+                        </div>
+                            
+
+                        </form>
+
+                        
+
+                    </div>
+                  </div>
+
               </div>
           </div>
         </div>
@@ -481,52 +533,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
     <script>
-        const deleteB1 = function(){
-            let button1 = document.getElementById("button1")
-            let row1 = document.getElementById("row1")
-            row1.style.display = "none"
+ 
+        const deleteRow = function(){
+         let rindex, table = document.getElementsByTagName("tbody")[0] 
+        for(let i=0; i< table.rows.length; i++){
+            table.rows[i].cells[3].onclick = function(){
+            rindex = this.parentElement.rowIndex
+            table.deleteRow(rindex-1)
+            }
+        }  
         }
+         deleteRow() 
         
-        const deleteB2 = function(){
-            let button2 = document.getElementById("button2")
-            let row2 = document.getElementById("row2")
-            row2.style.display = "none"
-        }
-
-        const deleteB3 = function(){
-            let button3 = document.getElementById("button3")
-            let row3 = document.getElementById("row3")
-            row3.style.display = "none"
-        }
-
-        const deleteB4 = function(){
-            let button4 = document.getElementById("button4")
-            let row4 = document.getElementById("row4")
-            row4.style.display = "none"
-        }
-
-        const deleteB5 = function(){
-            let button5 = document.getElementById("button5")
-            let row5 = document.getElementById("row5")
-            row5.style.display = "none"
-        }
-
-        const deleteB6 = function(){
-            let button6 = document.getElementById("button6")
-            let row6 = document.getElementById("row6")
-            row6.style.display = "none"
-        }
-
-        const deleteB7 = function(){
-            let button7 = document.getElementById("button7")
-            let row7 = document.getElementById("row7")
-            row7.style.display = "none"
-        }
-
-        const deleteB8 = function(){
-            let button8 = document.getElementById("button8")
-            let row8 = document.getElementById("row8")
-            row8.style.display = "none"
+        
+        const addRow = function(){
+            let trackNumber = document.getElementById("track-number").value
+            let trackName = document.getElementById("track-name").value
+            let trackLeng = document.getElementById("track-lenght").value
+            let table = document.getElementsByTagName("tbody")[0]
+            let newRow = table.insertRow(table.rows.length)
+            let col1 = newRow.insertCell(0)
+            let col2 = newRow.insertCell(1)
+            let col3 = newRow.insertCell(2)
+            let col4 = newRow.insertCell(3)
+               col1.innerHTML = trackNumber
+               col2.innerHTML = trackName
+               col3.innerHTML = trackLeng
+               col4.innerHTML = `<button onclick="deleteRow()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button>` 
+            if((col1.innerHTML === "")||(col2.innerHTML === "")||(col3.innerHTML === "")){
+                newRow.style.display = "none"
+                alert("You did't fill all the required spaces")
+            } 
         }
 
     </script>
