@@ -51,6 +51,15 @@ div.favourite-artist{
     margin: 0;
 }
 
+td {
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+td:hover{
+    opacity: 0;
+}
+
 @media only screen and (max-width: 1200px){
     .jumbotron h1{
         font-size: 3rem;

@@ -313,53 +313,53 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr id="row1">
                         <th scope="row">1</th>
                         <td>The Bird</td>
                         <td>3:37</td>
-                        <td><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
+                        <td><button onclick="deleteB1()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button1"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr>
+                      <tr id="row2">
                         <th scope="row">2</th>
                         <td>Heart Don't Stand a Chance</td>
                         <td>5:12</td>
-                        <td><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
+                        <td><button onclick="deleteB2()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button2"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr>
+                      <tr id="row3">
                         <th scope="row">3</th>
                         <td>The Waters</td>
                         <td>2:54</td>
-                        <td><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
+                        <td><button onclick="deleteB3()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button3"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr>
+                      <tr id="row4">
                         <th scope="row">4</th>
                         <td>The Season/Carry Me</td>
                         <td>5:28</td>
-                        <td><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
+                        <td><button onclick="deleteB4()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button4"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr>
+                      <tr id="row5">
                         <th scope="row">5</th>
                         <td>Put Me Thru</td>
                         <td>2:40</td>
-                        <td><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
+                        <td><button onclick="deleteB5()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button5"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr>
+                      <tr id="row6">
                         <th scope="row">6</th>
                         <td>Am I Wrong</td>
                         <td>4:13</td>
-                        <td><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
+                        <td><button onclick="deleteB6()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button6"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr>
+                      <tr id="row7">
                         <th scope="row">7</th>
                         <td>Whitout you</td>
                         <td>3:19</td>
-                        <td><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
+                        <td><button onclick="deleteB7()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button7"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
-                      <tr>
+                      <tr id="row8">
                         <th scope="row">8</th>
                         <td>Parking Lot</td>
                         <td>5:28</td>
-                        <td><button type="button" class="btn btn-outline-danger" style="line-height: 0.5;"><i class="bi bi-dash-circle"></i></button></td>
+                        <td><button onclick="deleteB8()" type="button" class="btn btn-outline-danger" style="line-height: 0.5;" id="button8"><i class="bi bi-dash-circle"></i></button></td>
                       </tr>
                     </tbody>
                   </table>
@@ -374,5 +374,55 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+    <script>
+        const deleteB1 = function(){
+            let button1 = document.getElementById("button1")
+            let row1 = document.getElementById("row1")
+            row1.style.display = "none"
+        }
+        
+        const deleteB2 = function(){
+            let button2 = document.getElementById("button2")
+            let row2 = document.getElementById("row2")
+            row2.style.display = "none"
+        }
+
+        const deleteB3 = function(){
+            let button3 = document.getElementById("button3")
+            let row3 = document.getElementById("row3")
+            row3.style.display = "none"
+        }
+
+        const deleteB4 = function(){
+            let button4 = document.getElementById("button4")
+            let row4 = document.getElementById("row4")
+            row4.style.display = "none"
+        }
+
+        const deleteB5 = function(){
+            let button5 = document.getElementById("button5")
+            let row5 = document.getElementById("row5")
+            row5.style.display = "none"
+        }
+
+        const deleteB6 = function(){
+            let button6 = document.getElementById("button6")
+            let row6 = document.getElementById("row6")
+            row6.style.display = "none"
+        }
+
+        const deleteB7 = function(){
+            let button7 = document.getElementById("button7")
+            let row7 = document.getElementById("row7")
+            row7.style.display = "none"
+        }
+
+        const deleteB8 = function(){
+            let button8 = document.getElementById("button8")
+            let row8 = document.getElementById("row8")
+            row8.style.display = "none"
+        }
+
+    </script>
   </body>
 </html>
