@@ -45,6 +45,12 @@ span.badge{
     color: white;
 }
 
+div.favourite-artist{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
 @media only screen and (max-width: 1200px){
     .jumbotron h1{
         font-size: 3rem;
