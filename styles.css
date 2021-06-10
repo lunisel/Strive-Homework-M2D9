@@ -60,6 +60,10 @@ td:hover{
     opacity: 0;
 }
 
+form{
+    padding-bottom: 1rem;
+}
+
 @media only screen and (max-width: 1200px){
     .jumbotron h1{
         font-size: 3rem;
